@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nhập Thông tin môn học</title>
+
+        <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+
+    <div class="container">
+    <div class="jumbotron">
+        <h3>Trang Nhập môn học của giáo viên</h3>
+        <p>Vui lòng nhập các thông tin sau</p>
+    </div>
+    
+    <form action="nhapmonhoc.php" method="POST">
+        <div class="form-group">
+            <label for="maMh">Mã môn học <span style="color:red">(bắt buộc)</span></label>
+            <input type="text" id="maMh" name="mamonhoc" class="form-control" placeholder="Nhập mã môn học"> 
+        </div>
+
+        <div class="form-group">
+            <label for="tenMh">Tên môn học <span style="color:red">(bắt buộc)</span></label>
+            <input type="text" id="tenMh" name="tenmonhoc" class="form-control" placeholder="Nhập tên môn học">
+        </div>
+
+        <div class="form-group">
+            <label for="stc">Số tính chỉ <span style="color:red">(bắt buộc)</span></label>
+            <input type="number" id="stc" name="stc" class="form-control" max="100" placeholder="Nhập số tính chỉ">
+        </div>
+
+        <div class="form-group">
+            <label for="maN">mã ngành <span style="color:red">(bắt buộc)</span></label>
+            <input type="text" id="maN" name="manganh" class="form-control" placeholder="Nhập Mã ngành">
+        </div>
+        
+        <div class="form-group">
+            <label for="nguT">Người tạo <span style="color:red">(bắt buộc)</span></label>
+            <input type="text" id="nguT" name="nguoitao" class="form-control" placeholder="Nhập người tạo">
+        </div>
+
+        <div class="form-group">
+            <label for="ngaT">Ngày tạo<span style="color:red">(bắt buộc)</span></label>
+            <input type="date" id="ngaT" name="ngaytao" class="form-control" placeholder="Nhập ngày tạo">
+        </div>
+        <input type="submit" name="submit" value="Thêm" class="btn btn-outline-primary">
+        <a href="../showdulieu/display-main.html" class="btn btn-outline-success">Xem thông tin</a>
+    </form>    
+</div>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nhập thông tin ngành</title>
+    
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        
+        <!-- Popper JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+
+    <div class="container">
+        <div class="jumbotron">
+            <h3>Nhập thông tin ngành</h3>
+            <p>- Đây là phần nhập thông tin ngành của sinh viên</p>
+        </div>
+        <form action="nhapnganh.php" method="POST">
+        <div class="form-group">
+            <label for="maN">Mã ngành <span style="color:red">(bắt buộc)</span></label>
+            <input type="text" id="maN" name="manganh" class="form-control" placeholder="Nhập mã ngành" required> 
+        </div>
+
+        <div class="form-group">
+            <label for="tenN">Tên ngành<span style="color:red">(bắt buộc)</span></label>
+            <input type="text" id="tenN" name="tennganh" class="form-control" placeholder="Nhập tên ngành" required>
+        </div>
+
+        <div class="form-group">
+            <label for="nguoiT">người tạo <span style="color:red">(bắt buộc)</span></label>
+            <input type="text" id="nguoiT" name="nguoitao" class="form-control" placeholder="Nhập người tạo" required>
+        </div>
+
+        <div class="form-group">
+            <label for="ngaT">ngày tạo<span style="color:red">(bắt buộc)</span></label>
+            <input type="date" id="ngaT" name="ngaytao" class="form-control" placeholder="Nhập ngày tạo" required>
+        </div>
+
+        <input type="submit" name="submit" value="Thêm" class="btn btn-primary">
+        <a href="../showdulieu/display-main.html" class="btn btn-success">Xem thông tin</a>
+
+    </form>
+    </div>
+
+
+
+    
+</body>
+</html>

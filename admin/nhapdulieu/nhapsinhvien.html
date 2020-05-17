@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nhập sinh viên</title>
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+
+</head>
+<body>
+    <div class="container">
+    <div class="jumbotron">
+        <h3>Nhập Thông tin của sinh viên</h3>
+    </div>
+</div>
+    <div class="container">
+    <form action="nhapsinhvien.php" method="POST">
+        <div class="form-group mt-3">
+            <label for="masv">Nhập mã sinh viên <span style="color:red">(bắt buộc)</span></label>
+            <input type="text" class="form-control" name="masv" id="masv" placeholder="Nhập mã sinh viên" required>
+        </div>
+
+        <div class="form-group">
+            <label for="hoten">Nhập họ và tên <span style="color:red">(bắt buộc)</span></label>
+            <input type="text" class="form-control" name="hoten" id="hoten" placeholder="Nhập Họ và tên" required>
+        </div>
+
+        <div class="form-group">
+            <label for="hinhanh">hình ảnh của sinh viên</label>
+            <input type="file" class="form-control-file border" name="hinhanh" id="hinhanh" placeholder="Nhập Họ và tên">
+        </div>
+        
+        <div class="form-group">
+            <label for="ngaysinh">Nhập ngày sinh <span style="color:red">(bắt buộc)</span></label>
+            <input type="date" class="form-control" id="ngaysinh" name="ngaysinh" required>
+        </div>
+
+        <div class="form-group">
+            <label for="diachiThgTru">Địa chỉ thường trú</label>
+            <input type="text" class="form-control" id="diachiThgTru" name="diachithgt" placeholder="địa chỉ thường trú">
+        </div>
+
+        <div class="form-group">
+            <label for="diachitt">Địa chỉ tạm trú</label>
+            <input type="text" class="form-control" id="diachitt" name="diachitt" placeholder="địa chỉ tạm trú">
+        </div>
+
+        <div class="form-group">
+            <label for="maN">Mã ngành</label>
+            <input type="text" class="form-control" id="maN" name="manganh" placeholder="Mã ngành">
+        </div>
+
+        <div class="form-group">
+            <label for="nguoitao">Người tạo <span style="color:red">(bắt buộc)</span></label>
+            <input type="text" class="form-control" id="nguoitao" name="nguoitao" placeholder="Nhập người tạo bài" required>
+        </div>
+
+        <div class="form-group">
+            <label for="ngaytao">Ngày tạo <span style="color:red">(bắt buộc)</span></label>
+            <input type="date" name="ngaytao" id="ngaytao" class="form-control" required>
+        </div>
+        
+        <input type="submit" name="submit" value="thêm" class="btn btn-primary">
+        <a href="../showdulieu/display-sv.php" class="btn btn-success">Xem thông tin</a>
+    </form>
+</div>
+
+</body>
+</html>
